@@ -1,6 +1,22 @@
 {
   "name": "todo-native",
   "version": "1.0.0",
+  "description": "a smoothly animated ToDo app built with React Native",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Malcak/todo-native.git"
+  },
+  "author": {
+    "name": "Malcak",
+    "email": "Malcakx@gmail.com",
+    "url": "https://malcak.vercel.app"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "react-native",
+    "todo"
+  ],
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
