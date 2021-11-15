@@ -43,4 +43,4 @@ This project can be run from the Expo client app.
 yarn start
 ```
 
-Read more in [https://docs.expo.dev/](https://docs.expo.dev/)
+Read more in [https://docs.expo.dev/](https://docs.expo.dev/) and [https://docs.expo.dev/workflow/expo-cli/](https://docs.expo.dev/workflow/expo-cli/)
