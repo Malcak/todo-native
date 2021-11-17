@@ -20,9 +20,6 @@ export default function MainScreen() {
         <Box>
           <TaskItem isDone={checked} onToggleCheckbox={handlePressCheckbox} />
         </Box>
-        <Box p={10} bg={useColorModeValue('red.500', 'yellow.500')}>
-          <Text>Hello World!</Text>
-        </Box>
         <ThemeToggle />
       </VStack>
     </Center>
