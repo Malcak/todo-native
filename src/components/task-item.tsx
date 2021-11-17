@@ -3,7 +3,6 @@ import { Pressable } from 'react-native'
 import {
   Box,
   HStack,
-  Text,
   useTheme,
   themeTools,
   useColorModeValue

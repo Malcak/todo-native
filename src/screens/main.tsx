@@ -1,12 +1,11 @@
-import * as React from 'react'
-import { Box, Center, Text, VStack, useColorModeValue } from 'native-base'
+import React, { useState, useCallback } from 'react'
+import { Box, Center, VStack, useColorModeValue } from 'native-base'
 import ThemeToggle from '../components/theme-toggle'
 import TaskItem from '../components/task-item'
-import { useCallback } from 'react'
 
 export default function MainScreen() {
-  const [checked, setChecked] = React.useState(false)
-  const handlePressCheckbox = React.useCallback(() => {
+  const [checked, setChecked] = useState(false)
+  const handlePressCheckbox = useCallback(() => {
     setChecked(prev => !prev)
   }, [])
   return (
@@ -16,7 +15,7 @@ export default function MainScreen() {
       px={4}
       flex={1}
     >
-      <VStack space={5} alignItems="center">
+      <VStack space={5} alignItems="center" w="full">
         <Box>
           <TaskItem isDone={checked} onToggleCheckbox={handlePressCheckbox} />
         </Box>
