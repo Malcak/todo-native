@@ -9,20 +9,20 @@ interface Props extends IButtonProps {
 }
 
 const MenuButton = ({ active, icon, children, ...props }: Props) => {
-  const colorScheme = useColorModeValue('blue', 'darkBlue')
-  const inactiveTextColor = useColorModeValue('blue.500', undefined)
-  const pressedBgColor = useColorModeValue('primary.100', 'primary.600')
+  const colorScheme = useColorModeValue('trueGray', 'dark')
+  const inactiveTextColor = useColorModeValue('trueGray.500', undefined)
+  const pressedBgColor = useColorModeValue('dark.600', 'dark.100')
 
   return (
     <Button
       size="lg"
       color={colorScheme}
-      bg={active ? undefined : 'transparent'}
+      bg={active ? 'trueGray.600' : 'transparent'}
       _pressed={{
         bg: pressedBgColor
       }}
       _text={{
-        color: active ? 'blue.50' : inactiveTextColor
+        color: active ? 'trueGray.50' : inactiveTextColor
       }}
       variant="solid"
       justifyContent="flex-start"
