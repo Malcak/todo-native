@@ -81,6 +81,20 @@ export default function AboutScreen() {
           >
             Go to YouTube channel
           </LinkButton>
+          <Text fontSize="md" w="full">
+            The beautiful images come from SALY 3D Illustration Pack.
+          </Text>
+          <LinkButton
+            colorScheme="cyan"
+            size="lg"
+            borderRadius="full"
+            href="https://www.figma.com/community/file/890095002328610853"
+            leftIcon={
+              <Icon as={Feather} name="figma" size="sm" opacity={0.5} />
+            }
+          >
+            Go to YouTube channel
+          </LinkButton>
         </VStack>
       </ScrollView>
     </AnimatedColorBox>
