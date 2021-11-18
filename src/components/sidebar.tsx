@@ -32,7 +32,7 @@ const SideBar = (props: DrawerContentComponentProps) => {
     <AnimatedColorBox
       safeArea
       flex={1}
-      bg={useColorModeValue('blue.50', 'darkBlue.800')}
+      bg={useColorModeValue('blue.50', 'primary.800')}
       p={7}
     >
       <VStack flex={1} space={2}>
@@ -41,12 +41,12 @@ const SideBar = (props: DrawerContentComponentProps) => {
             onPress={handlePressBackButton}
             borderRadius={100}
             variant="outline"
-            borderColor={useColorModeValue('blue.300', 'darkBlue.700')}
+            borderColor={useColorModeValue('blue.300', 'darkBlue.500')}
             _icon={{
               as: Feather,
               name: 'chevron-left',
               size: 6,
-              color: useColorModeValue('blue.800', 'darkBlue.700')
+              color: useColorModeValue('blue.800', 'darkBlue.100')
             }}
           />
         </HStack>
@@ -55,7 +55,7 @@ const SideBar = (props: DrawerContentComponentProps) => {
           size="xl"
           borderRadius={100}
           mb={6}
-          borderColor="secondary.500"
+          borderColor={useColorModeValue('orange.300', 'amber.600')}
           borderWidth={3}
         />
         <Heading mb={4} size="xl">
