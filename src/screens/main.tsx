@@ -5,7 +5,6 @@ import { nanoid } from 'nanoid/non-secure'
 import AnimatedColorBox from '../components/animated-color-box'
 import Masthead from '../components/masthead'
 import NavBar from '../components/navbar'
-import ThemeToggle from '../components/theme-toggle'
 import TaskList from '../components/task-list'
 
 const initialData = [
@@ -67,7 +66,7 @@ export default function MainScreen() {
       w="full"
     >
       <Masthead
-        title="What's up, Takuya!"
+        title="What's up, Malcak!"
         image={require('../assets/masthead.png')}
       >
         <NavBar />
@@ -90,7 +89,6 @@ export default function MainScreen() {
           onRemoveItem={handleRemoveItem}
           editingItemId={editingItemId}
         />
-        <ThemeToggle />
       </VStack>
       <Fab
         position="absolute"
