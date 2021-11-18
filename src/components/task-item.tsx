@@ -52,7 +52,7 @@ const TaskItem = (props: Props) => {
     theme,
     useColorModeValue('muted.300', 'muted.500')
   )
-  const checkMarkColor = themeTools.getColor(
+  const checkmarkColor = themeTools.getColor(
     theme,
     useColorModeValue('white', 'white')
   )
@@ -100,7 +100,7 @@ const TaskItem = (props: Props) => {
           <Pressable onPress={onToggleCheckbox}>
             <AnimatedCheckbox
               highlightColor={highlightColor}
-              checkmarkColor={checkMarkColor}
+              checkmarkColor={checkmarkColor}
               boxOutlineColor={boxStroke}
               checked={isDone}
             />
