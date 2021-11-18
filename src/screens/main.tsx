@@ -1,8 +1,10 @@
 import React, { useState, useCallback } from 'react'
-import { Center, Icon, VStack, useColorModeValue, Fab } from 'native-base'
+import { Icon, VStack, useColorModeValue, Fab } from 'native-base'
 import { AntDesign } from '@expo/vector-icons'
 import { nanoid } from 'nanoid/non-secure'
 import AnimatedColorBox from '../components/animated-color-box'
+import Masthead from '../components/masthead'
+import NavBar from '../components/navbar'
 import ThemeToggle from '../components/theme-toggle'
 import TaskList from '../components/task-list'
 
@@ -64,6 +66,12 @@ export default function MainScreen() {
       bg={useColorModeValue('warmGray.50', 'primary.900')}
       w="full"
     >
+      <Masthead
+        title="What's up, Takuya!"
+        image={require('../assets/masthead.png')}
+      >
+        <NavBar />
+      </Masthead>
       <VStack
         flex={1}
         space={1}
